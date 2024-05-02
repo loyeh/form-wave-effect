@@ -1,6 +1,6 @@
-const effects = document.querySelectorAll(".effect");
+const lables = document.querySelectorAll(".lable");
 
-console.log(effects);
+console.log(lables);
 function wave(text) {
   text.innerHTML = text.textContent
     .split("")
@@ -9,9 +9,8 @@ function wave(text) {
     })
     .join("");
 }
-effects.forEach(effect=>{
-    effect.addEventListener('click',()=>{
-        wave(effect.childNodes[1])
-        console.log(effect.childNodes)
-    })
-})
+lables.forEach((lable) => {
+  wave(lable);
+  console.log(lable);
+});
+

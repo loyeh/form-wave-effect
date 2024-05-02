@@ -21,11 +21,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px;
+  padding-inline: 20px;
   border-radius: 5px;
 }
 h3 {
   font-weight: 500;
+  margin-block: 10px;
 }
 .line {
   width: 100%;
@@ -64,21 +65,25 @@ input {
   background-color: white;
   box-shadow: none;
   outline: none;
-  border: none;
-  height: 0px;
-  position: absolute;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  border-bottom: 2px solid #a0a0ff;
+  margin-bottom: 5px;
 }
 
-label span{
-    display: inline-block;
-    transition: 0.5s;
-    cursor: default;
+label span {
+  transform: translateY(-30px);
+  display: inline-block;
+  transition: 0.5s;
+  cursor: default;
 }
-label{
-    display: inline-block;
-    cursor: pointer;
+label {
+  display: inline-block;
+  cursor: pointer;
 }
-label:hover span{
-    /* color: black; */
-    transform: translateY(-10px);
+input:focus ~ label span{
+  /* color: black; */
+  transform: translateY(-45px);
 }
