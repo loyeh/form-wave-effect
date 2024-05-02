@@ -51,6 +51,9 @@ h3 {
   color: #a0a0ff;
   cursor: pointer;
 }
+.signup span:hover{
+  color:#7070e0;
+}
 button {
   cursor: pointer;
   width: 100%;
@@ -60,6 +63,9 @@ button {
   background-color: #a0a0ff;
   margin-block: 10px;
   font-size: 10px;
+}
+button:hover{
+  background-color: #7070e0;
 }
 input {
   background-color: white;
