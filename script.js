@@ -1,6 +1,5 @@
 const lables = document.querySelectorAll(".lable");
 
-console.log(lables);
 function wave(text) {
   text.innerHTML = text.textContent
     .split("")
@@ -11,6 +10,4 @@ function wave(text) {
 }
 lables.forEach((lable) => {
   wave(lable);
-  console.log(lable);
 });
-
